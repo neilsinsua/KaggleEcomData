@@ -6,7 +6,6 @@ Analysing e-commerce transactional data to:
 
 - Insights into sales trends based on time
 - Understand customer behaviour
-- Build a product recomendation System
 - Creating an interactive dashboard for stakeholders
 
 ## Data Source
@@ -24,30 +23,28 @@ This is a transnational dataset from Kaggle which contains all the transactions 
 
 ## Insights Summary
 
-### Monthly Sales Trends:
+### Sales Performance
 
-- What is the overall trend in monthly sales (e.g., growing, declining, stable)?
-- Are there any significant seasonal peaks or troughs in sales (e.g., higher sales around holidays, lower sales in certain months)?
-- How does sales performance compare year-over-year for the same months?
-- Which month recorded the highest sales, and which had the lowest?
+- **Overall Sales Trends:** What are the daily, weekly, monthly, and annual sales trends?
+- **Seasonal Patterns:** Are there seasonal patterns in sales?
 
----
+### Product Insights
 
-### Daily Sales Trends:
+- **Best/Worst Selling Products:** Which products are the top and bottom performers based on `Quantity` sold and `GrandTotal` revenue?
+- **Co-Purchased Items:** What products are frequently purchased together (i.e., appear on the same `InvoiceNo`)?
 
-- Are there specific days within a month that consistently show higher or lower sales?
-- Do sales fluctuate significantly from day to day, or are they relatively consistent?
-- Are there any unusual spikes or dips that might correspond to specific events (e.g., promotions, news, external factors)?
+### Customer Behavior
 
----
-
-### Hourly Sales Trends:
-
-- What are the peak hours for sales activity during a typical day?
-- Are there significant periods of inactivity or very low sales?
-- Does the hourly pattern vary by day of the week or by month? (This would be a more advanced analysis).
-- At what time do most customers make their purchases?
+- **RFM Segmentation:** How can customers (`CustomerID`) be segmented based on:
+  - **Recency:** Their last `InvoiceDate`?
+  - **Frequency:** The total number of `InvoiceNo`s?
+  - **Monetary Value:** Their total `GrandTotal` spend?
+- **Top Customers:** Who are the customers (`CustomerID`) with the highest total `GrandTotal` spend?
+- **Repeat Purchase Analysis:** What is the frequency of purchases for individual `CustomerID`s over time (using `InvoiceDate`)?
+- **Geographic Sales:** Which `Country` generates the most sales revenue (`GrandTotal`)?
 
 ## Recommendations
 
 ## Dashboard
+
+[Interactive Dashboard](https://public.tableau.com/views/KaggleEcomm/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
