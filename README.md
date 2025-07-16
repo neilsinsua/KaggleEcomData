@@ -25,23 +25,64 @@ This is a transnational dataset from Kaggle which contains all the transactions 
 
 ### Sales Performance
 
-- **Overall Sales Trends:** What are the daily, weekly, monthly, and annual sales trends?
-- **Seasonal Patterns:** Are there seasonal patterns in sales?
+Quarterly:
+
+    Strong and consistent growth observed across all quarters from Q4 2010 to Q4 2011.
+
+![Quarterly Sales](quartersales.png)
+
+Monthly:
+
+    Upward trend throughout 2011.
+
+    A peak in sales occurred during September-November.
+
+    Followed by a decline in December 2011.
+
+![Monthly Sales](monthsales.png)
+
+Weekly:
+
+    Observed peak in sales on Wednesday/Thursday (mid week) across most months
+
+Daily:
+
+    No discernable pattern observed within a month period.
+
+    Increase in daily sales towards the end of the year (from August to December).
+
+Seasonal:
+
+    Sales are lower in the early months (Feb-Apr)
+
+    Progressively increasing peaking around November
+
+![Seasonal Sales](seasonalsales.png)
 
 ### Product Insights
 
-- **Best/Worst Selling Products:** Which products are the top and bottom performers based on `Quantity` sold and `GrandTotal` revenue?
+Top Products by Sales:
+
+    PAPER CRAFT, LITTLE BIRDIE: £168,469.60
+    REGENCY CAKESTAND 3 TIER: £142,592.95
+    WHITE HANGING HEART T-LIGHT HOLDER: £100,448.15
+
+Top Products by Quantity:
+
+    WHITE HANGING HEART T-LIGHT HOLDER: 1,971 units
+    REGENCY CAKESTAND 3 TIER: 1,703 units
+    JUMBO BAG RED RETROSPOT: 1,600 units
+
 - **Co-Purchased Items:** What products are frequently purchased together (i.e., appear on the same `InvoiceNo`)?
 
 ### Customer Behavior
 
-- **RFM Segmentation:** How can customers (`CustomerID`) be segmented based on:
-  - **Recency:** Their last `InvoiceDate`?
-  - **Frequency:** The total number of `InvoiceNo`s?
-  - **Monetary Value:** Their total `GrandTotal` spend?
-- **Top Customers:** Who are the customers (`CustomerID`) with the highest total `GrandTotal` spend?
-- **Repeat Purchase Analysis:** What is the frequency of purchases for individual `CustomerID`s over time (using `InvoiceDate`)?
-- **Geographic Sales:** Which `Country` generates the most sales revenue (`GrandTotal`)?
+**Customer Behavior**
+
+- **Customer Segmentation:** What insights does the RFM (Recency, Frequency, Monetary) segmentation reveal about distinct customer groups based on their last purchase date, total transaction count, and total spending
+- **High-Value Customers:** Who are identified as the most valuable customers based on their cumulative spending?
+- **Purchase Cadence:** What patterns emerge regarding the frequency of purchases by individual customers over time?
+- **Geographical Performance:** Which countries are the primary drivers of sales revenue?
 
 ## Recommendations
 
